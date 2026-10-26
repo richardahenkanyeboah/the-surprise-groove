@@ -81,8 +81,65 @@ margin: 0%;
     z-index: 1;
     color: #ffff;
     padding: 40px;
+    width: 100%;
   }
 </style>
+
+                                        <!-- card style here-->
+<style>
+    .carousel {
+    margin: 10px auto;
+    width: 90%;
+    border: 5px solid rgba(9, 16, 17, 0.404);
+    display: flex;
+    overflow-x: auto
+    }
+</style>
+
+<style>
+    .group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation:spin 5s infinite linear;
+    padding-right: 15%;
+    }
+</style>
+
+<style>
+    .cards {
+        flex: 0 0 5em;
+    height: 5em;
+    padding: 2em;
+    background: rgba(231, 223, 196, 0.479);
+    font-size: 3rm;
+    border-radius:.2rm;
+    text-align: center;
+    align-content: center;
+    }
+</style>
+
+<style>
+    @keyframes spin {
+    from {translate:0;}
+    to {translate: -100%;}
+    }
+</style>
+
+<style>
+    .carousel::-webkit-scrollbar {
+        display:none;
+    }
+</style>
+<style>
+    img {
+        width:100%;
+    }
+</style>
+
+                                             <!-- card style here-->
+
 
 
 </head><body>
@@ -93,7 +150,7 @@ margin: 0%;
 <img src="./The surprise grove ghana_files/box.jpg" class="bg-image" alt=" background">
 
 
-   <div class="content-wrapper"> 
+  <div class="content-wrapper"> 
 
 
     <div>
@@ -103,14 +160,44 @@ margin: 0%;
             #f09245; margin-bottom: 0%;">Groove Store </h1> 
           <h1 style="text-align: left; font-size:300%; margin-left: 5%; margin-top: 0%;">The Surprise Groove </h1> 
             
-            <p style="font-size:20px; text-align:left; margin-left: 5%;  background-color: rgba(240, 248, 255, 0.37); display: inline-block;"> Welcome to 
-              our self service online store. 
+            <p style="font-size:20px; text-align:left; margin-left: 5%; 
+             background-color: rgba(240, 248, 255, 0.37);
+              display: inline-block; margin-top:0vh; ">
+               Welcome to 
+              our self service online store. <br>
               kindly follow the
-            prompts and request your order, 
+            prompts and request your order, <br>
               we will process as soon as you are done !</p>
 
-            
+
               
+                                           <!-- card animation here-->
+    <div class="carousel">
+
+                    <div class="group">
+                                
+                                
+                                <div class="cards"> <p>1.Place Order</p></div>    
+                                <div class="cards"> <p>2.Print Order</p> </div>    
+                                <div class="cards"> <p>3.Send Whatsapp</p></div>  
+                    </div>
+                                        
+      
+                    <div aria-hidden="" class="group">
+                                
+                                
+                                <div class="cards"> <p>1.Place Order</p></div>    
+                                <div class="cards"> <p>2.Print Order</p> </div>    
+                                <div class="cards"> <p>3.Send Whatsapp</p></div>  
+                    </div>
+      
+
+    </div>
+
+                                            <!-- card animation here-->
+
+            
+               
 
 
               <!--step 1 code here-->
@@ -129,7 +216,7 @@ margin: 0%;
         <p style="text-align: center; font-size:
          x-large; font-weight: 100 ;">Birthday</p>
         <p style="text-align: center;"> 
-          Cake, Pizza, Champagne, Customized card, Party popper
+          Cake, Pizza, Champagne, Customized Card, Party Popper
          </p> 
 
      
@@ -151,7 +238,7 @@ margin: 0%;
           <p style="text-align: center; font-size: x-large;
             font-weight: 100 ;">Graduation</p>
           <p style="text-align: center;">   Flower or Ballon bouquet,      
-            <br> Giant Gift Check, champagne ,Cake,Party Popper 
+            <br> Giant Gift Check, Champagne , Cake, Party Popper 
            </p>  
            
     
@@ -171,7 +258,7 @@ margin: 0%;
           <img src="./The surprise grove ghana_files/surprise.jfif" alt="" ;="" style="width:100%; margin-top:2%; ">
         
           <p style="text-align: center; font-size: x-large; font-weight:100 ;">Surprise</p>
-          <p style="text-align: center;"> Party Crowd, Pizza, cake, 
+          <p style="text-align: center;"> Party Crowd, Pizza, Cake, 
             Party Popper, Ballon, Champagne , Saxophone Serenade, .
              </p> 
 
@@ -284,7 +371,7 @@ margin: 0%;
             <p style="text-align: center;"> </p> 
             <ul>
                <input type="radio" name="money7" id="1000ghc">650ghc <br>
-             <input type="radio" name="money7" id="1000ghc">12000ghc <br>
+             <input type="radio" name="money7" id="1000ghc">1300ghc <br>
            <input type="radio" name="money7" id="1000ghc">2000gh
             </ul>
 
@@ -317,7 +404,7 @@ margin: 0%;
           <p style="background-color: rgba(240, 248, 255, 0.582);">Please fill out the document below to finalize your order</p>
           <form action="http://127.0.0.1:5500/The%20surprise%20groove.html" method="" style="background-color: rgba(240, 248, 255, 0.582);"> Name to be placed on the order<input type="text" placeholder="Name ">  </form>
 
-          <form action="http://127.0.0.1:5500/The%20surprise%20groove.html" style="background-color: rgba(240, 248, 255, 0.582);">Gender of the indevidual
+          <form action="http://127.0.0.1:5500/The%20surprise%20groove.html" style="background-color: rgba(240, 248, 255, 0.582);">Gender of the individual
            <input placeholder="Gender" type=""></form>
 
            <form action="http://127.0.0.1:5500/The%20surprise%20groove.html" style="background-color: rgba(240, 248, 255, 0.582);">Type Of Event<input placeholder="Type Of Event" type="text"></form>
@@ -350,8 +437,11 @@ margin: 0%;
           <input type="text" placeholder="type name on account" style="margin-left: 23%; ">
        
        
-         <p style="background-color: rgba(240, 248, 255, 0.582);">Hello cherished customer, You will recieve a unique tracking number that makes your order quite special. A unique tracking number boost processing time and enables us to track your Product all the way to your door step</p>
-         <p style="background-color: rgba(240, 248, 255, 0.582);"> Your Order will be confirmed only after Payment has been made and confirmed</p>
+         <p style="background-color: rgba(240, 248, 255, 0.582);">Hello cherished customer, 
+          You will recieve a unique tracking number that makes your order quite special. 
+          A unique tracking number boost processing time and enables us to track your Product all the way to your door step</p>
+         <p style="background-color: rgba(240, 248, 255, 0.582);"> Your Order will be confirmed only after 
+          Payment has been made and confirmed</p>
 
 </div>
   
@@ -375,12 +465,21 @@ margin: 0%;
            code;" style="margin-left: 15%;">
 
            <p style="background-color:
-             rgba(240, 248, 255, 0.582);">Click order compete to print reciept, Our Whatsapp page will automatically open to recieve your reciept. </p>
+             rgba(240, 248, 255, 0.582);">Click print order to print reciept, Our Whatsapp page will automatically open to recieve your reciept. </p>
            
-              <button type="button" onclick="window.print();">Order Complete</button>
+              <button type="button" style="width: 10vh; " onclick="window.print();">Print <br> Order </button>
+
+
+                <a href="https://wa.me/" target="_blank"> 
+             <button style="width: 50%; margin-bottom:1%; color: green; "> 
+               Send <br> Whatsapp </button></a>
+
 </div>
  </div>
-   
+   <br>
+   <br>
+   <br>
+   <br>
 
 
  
